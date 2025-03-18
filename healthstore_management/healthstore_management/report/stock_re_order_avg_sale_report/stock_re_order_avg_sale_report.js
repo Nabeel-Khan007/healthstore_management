@@ -145,7 +145,7 @@ function create_doc(doctype) {
             description: $(this).data("item_name"),
             //qty: $(this).data("available_qty"),
             qty: Math.max(1, $(this).data("avg_monthly_sale") || 0),
-            warehouse: "Finished Goods - Z", //when go live Finished Goods - THSD
+            warehouse: "Warehouse - Unit 100 Harbours Walk - THS", //when go live Finished Goods - THSD
             conversion_factor: 1,
             uom: "Nos"
         });
@@ -243,7 +243,7 @@ function create_material_request_doc() {
             item_code: $(this).data("item_code"),
             description: $(this).data("item_name"),
             qty: Math.max(1, $(this).data("avg_monthly_sale") || 0),
-            warehouse: "Finished Goods - Z", //when go live Finished Goods - THSD
+            warehouse: "Warehouse - Unit 100 Harbours Walk - THS", //when go live Finished Goods - THSD
             schedule_date: frappe.datetime.add_days(frappe.datetime.nowdate(), 7),
         });
     });
